@@ -1,0 +1,8 @@
+a, a:hover{
+  color: #36C; 
+  text-decoration: none;
+}
+
+a:hover{
+  border-bottom: 1px dashed #36C;
+}
