@@ -1,43 +1,45 @@
-const org = 'hsiuhsiu';
-const repo = 'hsiuhsiu.github.io';
-const branch = 'gh-pages-private';
+// import GitHub from 'github-api';
 
-function onSubmit(form) {
-  // 1
-  const login = form.username || form.querySelector('#login').value;
-  const password = form.token || form.querySelector('#password').value;
+const username = 'hsiuhsiu';
+const repoName = 'ponti_wiki';
+const branchName = 'master';
+const filePath = 'wiki/index.html'
 
-  // 2
-  const token = btoa(`${login}:${password}`);
-  const request = new Request(
-    `https://api.github.com/repos/${org}/${repo}/contents/${page}?ref=${branch}`,
-    {
-      method: 'GET',
-      credentials: 'omit',
+export function onSubmit(form) {
+  const accessToken = form.token || form.querySelector('#password').value;
+
+  const gh = new GitHub({
+    token: accessToken
+  });
+
+  var fileName = filePath.split(/(\\|\/)/g).pop();
+  var fileParent = filePath.substr(0, filePath.lastIndexOf("/"));
+  var repo = gh.getRepo(username, repoName);
+
+  fetch('https://api.github.com/repos/' +
+    username + '/' +
+    repoName + '/git/trees/' +
+    encodeURI(branchName + ':' + fileParent), {
       headers: {
-        Accept: 'application/json',
-        Authorization: `Basic ${token}`
-      },
-    });
-
-  // 3
-  fetch(request)
-    .then(function (response) {
-      if (response.status !== 200) { // 4
-        document.querySelector('#loginForm').innerHTML = `Failed to load document (status: ${response.status})`;
-      } else {
-        response.json()
-          .then(function (json) { // 5
-            const content = json.encoding === 'base64' ? atob(json.content) : json.content;
-
-            // 6
-            const startIdx = content.indexOf('<body');
-            document.body.innerHTML = content.substring(
-                content.indexOf('>', startIdx) + 1,
-                content.indexOf('</body>'));
-          });
+        "Authorization": "token " + accessToken
       }
-    });
+    }).then(function(response) {
+    return response.json();
+  }).then(function(content) {
+    var file = content.tree.filter(entry => entry.path === fileName);
 
-    return false;
+    if (file.length > 0) {
+      console.log("get blob for sha " + file[0].sha);
+      //now get the blob
+      repo.getBlob(file[0].sha).then(function(response) {
+        console.log("response size : " + response.data.length);
+        var newDoc = document.open("text/html", "replace");
+        newDoc.write(response.data);
+        newDoc.close();
+      });
+    } else {
+      console.log("file " + fileName + " not found");
+    }
+  });
 }
+window.onSubmit = onSubmit;
