@@ -14,7 +14,7 @@
     "clean": "gatsby clean",
     "dev": "gatsby develop",
     "start": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && master -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "gatsby": "^2.23.18",
