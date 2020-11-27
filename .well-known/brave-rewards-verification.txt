@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: yihsiu.org
+Token: 58a7de91a80d34fd672c65ef67775c1badc03de0683a015b0f75e6c3af64e279
