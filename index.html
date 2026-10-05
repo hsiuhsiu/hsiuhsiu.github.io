@@ -1,110 +1,86 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46430001-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-46430001-2');
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yi-Hsiu Chen — applied cryptographer. Research, papers, and projects.">
   <title>Yi-Hsiu Chen</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="canonical" href="https://yihsiu.org/">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <div style="clear: right; float: right; margin-bottom: 10px; text-align: right; padding-left: 1em;">
-    <img src="me.png" border=5 style="width:192px;height:192px;"><br>
-    <span style="font-size: x-small">[photo by <a href="https://github.com/chingyuchen">Ching-Yu Chen</a>]</span>
-  </div>
-  <h1>Yi-Hsiu Chen</h1>
-  <h2>Short Bios</h2>
-    I am an applied cryptographer at Coinbase. Previously, I was a research scientist in the Ads Core ML team at Facebook.
+  <main>
+    <figure class="portrait">
+      <img src="me.png" alt="Yi-Hsiu Chen" width="192" height="192">
+      <figcaption>Photo by <a href="https://github.com/chingyuchen">Ching-Yu Chen</a></figcaption>
+    </figure>
+    <h1>Yi-Hsiu Chen</h1>
+    <p>I am an applied cryptographer at Coinbase. Previously, I was a research scientist in the Ads Core ML team at Facebook.</p>
+    <p>I completed my Ph.D. in theoretical cryptography at Harvard University, advised by <a href="https://salil.seas.harvard.edu/">Salil Vadhan</a>. Before that, I studied physics at National Taiwan University and computer science at Columbia University.</p>
+    <p>Email: <a href="mailto:yihsiu@alumni.harvard.edu">&#121;&#105;&#104;&#115;&#105;&#117;&#64;&#97;&#108;&#117;&#109;&#110;&#105;&#46;&#104;&#97;&#114;&#118;&#97;&#114;&#100;&#46;&#101;&#100;&#117;</a> · <a href="https://www.linkedin.com/in/yihsiuchen/">LinkedIn</a> · <a href="https://github.com/hsiuhsiu">GitHub</a></p>
 
-    I completed my Ph.D. in theoretical cryptography at Harvard University, where I was fortunate to have professor <a href="http://people.seas.harvard.edu/~salil">Salil Vadhan</a> as my advisor. Before that, I studied physics at the National Taiwan University</a> and computer science at the Columbia University.
-  <h2>Contact Information</h2>
-  <b>Email:</b> &#121;&#105;&#104;&#115;&#105;&#117;&#64;&#97;&#108;&#117;&#109;&#110;&#105;&#46;&#104;&#97;&#114;&#118;&#97;&#114;&#100;&#46;&#101;&#100;&#117;
-  <h2>Experience</h2>
-  <ul>
-    <li>
-      Research intern at Facebook, Summer 2018
-    </li>
-    <li>
-      Teaching fellow of <a href="http://people.seas.harvard.edu/~salil/cs225/">CS225 Pseudorandomness</a>, Fall 2016
-    </li>
-    <li>
-      Teaching fellow of <a href="http://sites.fas.harvard.edu/~cs124/cs124/index.html">CS124 Algorithm</a>, Spring 2017
-    </li>
-    <li>
-      Software engineer intern at Rocket Fuel Inc, Spring 2014
-    </li>
-  </ul>
-    <h2>Research</h2>
-  My research interests include pseudorandomness and theory in differential privacy. During the visiting at <a href="https://www.sinica.edu.tw/main_e.shtml">Academia Sinica</a> of Taiwan in 2015-2016, I was hosted by <a href="http://www.iis.sinica.edu.tw/~kmchung/">Kai-Min Chung</a>, who lead me into the world of quantum information.
-  <ul>
-    <li>
-      <strong>Dissertation</strong>: <a href="https://dash.harvard.edu/handle/1/42029772">Computational Notions of Entropy: Classical, Quantum, and Applications</a> (May 2019)
-    </li>
-    <li>
-      <a href="http://people.seas.harvard.edu/~mbun/">Mark Bun</a>, Yi-Hsiu Chen, and <a href="http://people.seas.harvard.edu/~salil">Salil Vadhan</a>.<br>
-      <strong>
-        Separating Computational and Statistical Differential Privacy in the Client-Server Model
-      </strong><br>
-      TCC '16-B,
-      [<a href="https://eprint.iacr.org/2016/820">ePrint</a>]
-      [<a href="doc/cdp-tcc-slide.pdf">slides</a>]
-    </li>
-    <li>
-      Yi-Hsiu Chen, <a href="http://www.iis.sinica.edu.tw/~kmchung/">Kai-Min Chung</a>, <a href="https://sites.google.com/site/laichingyi0616/">Ching-Yi Lai</a>, <a href="http://people.seas.harvard.edu/~salil">Salil Vadhan</a>, and <a href="https://ix.cs.uoregon.edu/~xiaodiwu/">Xiaodi Wu</a>.<br>
-      <strong>
-          Computational Notions of Quantum Min-Entropy
-      </strong><br>
-      [<a href="https://arxiv.org/abs/1704.07309">arXiv</a>]
-    </li>
-    <li>
-        Yi-Hsiu Chen, <a href="http://www.iis.sinica.edu.tw/~kmchung/">Kai-Min Chung</a>, and Jyun-Jie Liao.<br>
-      <strong>
-        On the Complexity of Simulating Auxiliary Input
-      </strong><br>
-      EUROCRYPT '18,
-      [<a href="https://eprint.iacr.org/2018/171">ePrint</a>]
-    </li>
-    <li>
-        Yi-Hsiu Chen, <a href="http://www.cs.utoronto.ca/~mgoos/">Mika G&ouml;&ouml;s</a>, <a href="http://people.seas.harvard.edu/~salil">Salil Vadhan</a>, and <a href="https://sites.google.com/site/jiapeng0708/home">Jiapeng Zhang</a>.<br>
-      <strong>
-        A Tight Lower Bound for Entropy Flattening
-      </strong><br>
-      <a href="http://drops.dagstuhl.de/opus/volltexte/2018/8866/"> CCC '18 </a>
-    </li>
-    <li>
-      <a href="https://rohitagr.com/">Rohit Agrawal</a>, Yi-Hsiu Chen, <a href="https://thibaut.horel.org/">Thibaut Horel</a>, and <a href="http://people.seas.harvard.edu/~salil">Salil Vadhan</a>.<br>
-      <strong>
-        Unifying Computational Entropies via Kullback–Leibler Divergence
-      </strong><br>
-      CRYPTO'19, <a href="https://eprint.iacr.org/2019/264">[eprint]</a>
-    </li>
-  </ul>
-  <script>
-    window.page = '${page}'; // 2
-  </script>
-  <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
-  <script type="module">
-    import { onSubmit } from './js/github.js';
-  </script> <!-- 3 -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="https://github.com/coinbase/cb-mpc">cb-mpc</a> — Coinbase’s open-source library for secure multiparty computation and threshold signing, with protocol specifications and theory.</li>
+        <li><a href="/cue/">Cue</a> — a small, fast, open-source macOS launcher I built for everyday use. Fork it and make it your own.</li>
+      </ul>
+    </section>
 
-  <!-- Google Analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <section id="research">
+      <h2>Research</h2>
+      <p>My work spans applied and theoretical cryptography, including zero-knowledge proofs, secret sharing, pseudorandomness, and differential privacy.</p>
+      <p>During a visit to <a href="https://www.sinica.edu.tw/en">Academia Sinica</a> in Taiwan in 2015–2016, I was hosted by <a href="https://homepage.iis.sinica.edu.tw/~kmchung/">Kai-Min Chung</a>, who introduced me to quantum information.</p>
+      <ul class="papers">
+        <li>
+          Yi-Hsiu Chen and <a href="https://yehudalindell.com/">Yehuda Lindell</a>.<br>
+          <strong>Optimizing and Implementing Fischlin’s Transform for UC-Secure Zero Knowledge</strong><br>
+          IACR Communications in Cryptology, 1(2), 2024.
+          [<a href="https://doi.org/10.62056/a66chey6b">journal</a>]
+          [<a href="https://eprint.iacr.org/2024/526">ePrint, revised March 2026</a>]
+        </li>
+        <li>
+          Yi-Hsiu Chen and <a href="https://yehudalindell.com/">Yehuda Lindell</a>.<br>
+          <strong>Feldman’s Verifiable Secret Sharing for a Dishonest Majority</strong><br>
+          IACR Communications in Cryptology, 1(1), 2024.
+          [<a href="https://doi.org/10.62056/ak2isgvtw">journal</a>]
+          [<a href="https://eprint.iacr.org/2024/031">ePrint</a>]
+        </li>
+        <li>
+          <a href="https://rohitagr.com/">Rohit Agrawal</a>, Yi-Hsiu Chen, <a href="https://thibaut.horel.org/">Thibaut Horel</a>, and <a href="https://salil.seas.harvard.edu/">Salil Vadhan</a>.<br>
+          <strong>Unifying Computational Entropies via Kullback–Leibler Divergence</strong><br>
+          CRYPTO 2019.
+          [<a href="https://eprint.iacr.org/2019/264">ePrint</a>]
+        </li>
+        <li>
+          Yi-Hsiu Chen, <a href="https://ic-people.epfl.ch/~goos/">Mika Göös</a>, <a href="https://salil.seas.harvard.edu/">Salil Vadhan</a>, and <a href="https://sites.google.com/site/jiapeng0708/home">Jiapeng Zhang</a>.<br>
+          <strong>A Tight Lower Bound for Entropy Flattening</strong><br>
+          CCC 2018.
+          [<a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CCC.2018.23">paper</a>]
+        </li>
+        <li>
+          Yi-Hsiu Chen, <a href="https://homepage.iis.sinica.edu.tw/~kmchung/">Kai-Min Chung</a>, and Jyun-Jie Liao.<br>
+          <strong>On the Complexity of Simulating Auxiliary Input</strong><br>
+          EUROCRYPT 2018.
+          [<a href="https://eprint.iacr.org/2018/171">ePrint</a>]
+        </li>
+        <li>
+          Yi-Hsiu Chen, <a href="https://homepage.iis.sinica.edu.tw/~kmchung/">Kai-Min Chung</a>, <a href="https://sites.google.com/view/ching-yi-lai">Ching-Yi Lai</a>, <a href="https://salil.seas.harvard.edu/">Salil Vadhan</a>, and <a href="https://www.cs.umd.edu/~xwu/">Xiaodi Wu</a>.<br>
+          <strong>Computational Notions of Quantum Min-Entropy</strong><br>
+          Preprint, 2017.
+          [<a href="https://arxiv.org/abs/1704.07309">arXiv</a>]
+        </li>
+        <li>
+          <a href="https://cs-people.bu.edu/mbun/">Mark Bun</a>, Yi-Hsiu Chen, and <a href="https://salil.seas.harvard.edu/">Salil Vadhan</a>.<br>
+          <strong>Separating Computational and Statistical Differential Privacy in the Client-Server Model</strong><br>
+          TCC 2016-B.
+          [<a href="https://eprint.iacr.org/2016/820">ePrint</a>]
+          [<a href="doc/cdp-tcc-slide.pdf">slides</a>]
+        </li>
+      </ul>
+      <p><strong>Dissertation:</strong> <a href="https://dash.harvard.edu/entities/publication/969c9ed4-1412-4f64-8fea-d79e0eb6991a">Computational Notions of Entropy: Classical, Quantum, and Applications</a> (May 2019).</p>
+    </section>
 
-    ga('create', 'UA-46430001-2', 'auto');
-    ga('send', 'pageview');
-  </script>
+  </main>
 </body>
 </html>
-
