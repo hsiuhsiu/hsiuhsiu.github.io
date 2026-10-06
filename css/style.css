@@ -21,10 +21,6 @@ h2 {
   margin-top: 1.5em;
 }
 
-section {
-  clear: both;
-}
-
 a {
   overflow-wrap: anywhere;
 }
@@ -34,22 +30,6 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
-.portrait {
-  float: right;
-  margin: 0 0 1rem 1.5rem;
-}
-
-.portrait img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.portrait figcaption {
-  margin-top: .25rem;
-  font-size: .75rem;
-}
-
 .papers li {
   margin-bottom: 1em;
 }
@@ -57,10 +37,5 @@ a:focus-visible {
 @media (max-width: 36rem) {
   body {
     margin: 1rem auto;
-  }
-
-  .portrait {
-    float: none;
-    margin: 0 0 1rem;
   }
 }
